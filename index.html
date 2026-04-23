@@ -1,216 +1,279 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<title>PCHT ESSENCE | Perfumes Árabes</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Técnico: Biohuerto Escolar 5to C</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Montserrat:wght@300;400;700&display=swap');
 
+        :root {
+            --nature-green: #1b5e20;
+            --secondary-green: #388e3c;
+            --earth: #5d4037;
+            --line-color: #c8e6c9;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #dadada;
+            margin: 0;
+            color: #222;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 25mm;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* --- Hoja de Respeto --- */
+        .respeto-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 247mm;
+            color: #ececec;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+
+        /* --- Carátula --- */
+        .border-double {
+            border: 6px double var(--nature-green);
+            height: 247mm;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .main-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3.2rem;
+            color: var(--nature-green);
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .data-box {
+            text-align: left;
+            width: 85%;
+            background: #f1f8e9;
+            padding: 30px;
+            border-left: 10px solid var(--nature-green);
+            border-radius: 0 15px 15px 0;
+        }
+
+        /* --- Estilo de Contenido --- */
+        h3 {
+            font-family: 'Crimson Pro', serif;
+            color: var(--nature-green);
+            border-bottom: 3px solid var(--secondary-green);
+            padding-bottom: 10px;
+            margin-top: 45px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        .semana-container {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .img-frame {
+            width: 100%;
+            height: 350px;
+            background: #f5f5f5;
+            border: 2px solid #ddd;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .math-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            background: #f9fdf9;
+            padding: 20px;
+            border: 1px solid var(--line-color);
+        }
+
+        .math-item {
+            padding: 15px;
+            border-left: 5px solid var(--secondary-green);
+            background: white;
+        }
+
+        .result {
+            font-family: 'Crimson Pro', serif;
+            font-weight: bold;
+            color: #b71c1c;
+            font-size: 1.1rem;
+        }
+
+        .page-break { page-break-after: always; }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; }
+        }
+    </style>
+</head>
 <body>
 
-<!-- HEADER -->
-<header>
-
-<img src="imagenes/logo marca.jpg" width="120">
-
-<h1>PCHT ESSENCE</h1>
-
-<p>No vendemos perfumes. Creamos presencia.</p>
-
-<nav>
-<ul>
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#catalogo">Catálogo</a></li>
-<li><a href="#marca">Marca</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
-</nav>
-
-</header>
-
-
-<!-- HERO -->
-<section id="inicio">
-
-<h2>Lujo árabe auténtico</h2>
-
-<img src="imagenes/presentacion.jpg" width="500">
-
-<p>Fragancias que imponen presencia.</p>
-
-<p>Redefiniendo lujo y exclusividad con cada nota.</p>
-
-<p>📍 Nasca | Entrega inmediata</p>
-<p>📦 100% original</p>
-
-<a href="#catalogo">
-<button>Ver catálogo</button>
-</a>
-
-</section>
-
-
-<!-- CATALOGO -->
-<section id="catalogo">
-
-<h2>Catálogo de Perfumes</h2>
-
-<article>
-
-<h3>Odyssey Mandarinsky</h3>
-
-<img src="imagenes/Nueva carpeta/perfume mandarin.jpg" width="250">
-
-<p>Eau de Parfum</p>
-<p>Limited Edition</p>
-
-<p>
-Fragancia masculina con salida cítrica vibrante,
-corazón aromático elegante y fondo sofisticado.
-</p>
-
-<ul>
-<li>Duración: Alta</li>
-<li>Proyección: Intensa</li>
-<li>Tipo: Masculino</li>
-</ul>
-
-<p>Precio: Consultar por Instagram</p>
-
-<a href="https://instagram.com/pcht_essence">
-<button>Comprar</button>
-</a>
-
-</article>
-
-
-<article>
-
-<h3>Odyssey Mandarinsky</h3>
-
-<img src="imagenes/Nueva carpeta/perfume mandarin1.jpg" width="250">
-
-<p>Presentación Premium</p>
-
-<ul>
-<li>Perfume árabe</li>
-<li>Alta concentración</li>
-<li>Fragancia exclusiva</li>
-</ul>
-
-<p>Disponible para entrega inmediata</p>
-
-<a href="https://instagram.com/pcht_essence">
-<button>Comprar</button>
-</a>
-
-</article>
-
-
-<article>
-
-<h3>Odyssey Mandarinsky</h3>
-
-<img src="imagenes/Nueva carpeta/perfume mandarin2.jpg" width="250">
-
-<p>For Men</p>
-
-<ul>
-<li>Elegancia masculina</li>
-<li>Estilo moderno</li>
-<li>Notas cítricas refinadas</li>
-</ul>
-
-<p>Stock disponible</p>
-
-<a href="https://instagram.com/pcht_essence">
-<button>Comprar</button>
-</a>
-
-</article>
-
-</section>
-
-
-<!-- BENEFICIOS -->
-<section>
-
-<h2>¿Por qué elegir PCHT ESSENCE?</h2>
-
-<ul>
-
-<li>✔ Perfumes árabes originales</li>
-
-<li>✔ Fragancias exclusivas</li>
-
-<li>✔ Alta duración</li>
-
-<li>✔ Entrega inmediata en Nasca</li>
-
-<li>✔ Atención personalizada</li>
-
-</ul>
-
-</section>
-
-
-<!-- MARCA -->
-<section id="marca">
-
-<h2>Nuestra esencia</h2>
-
-<p>
-En PCHT ESSENCE creemos que un perfume no es solo aroma,
-es presencia, identidad y elegancia.
-</p>
-
-<p>
-Seleccionamos fragancias árabes exclusivas para quienes
-buscan destacar y dejar huella.
-</p>
-
-</section>
-
-
-<!-- REDES -->
-<section id="contacto">
-
-<h2>Redes Sociales</h2>
-
-<p>Instagram oficial</p>
-
-<a href="https://instagram.com/pcht_essence">
-
-<h3>@pcht_essence</h3>
-
-</a>
-
-<p>
-Escríbenos para consultar precios,
-disponibilidad y pedidos.
-</p>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-<p>PCHT ESSENCE</p>
-
-<p>Lujo árabe auténtico</p>
-
-<p>📍 Nasca - Perú</p>
-
-<p>Instagram: @pcht_essence</p>
-
-<p>© 2026 PCHT ESSENCE</p>
-
-</footer>
-
+    <div class="page">
+        <div class="respeto-text">Hoja de Respeto</div>
+    </div>
+    <div class="page-break"></div>
+
+    <div class="page">
+        <div class="border-double">
+            <p style="font-weight: bold; letter-spacing: 3px;">INSTITUCIÓN EDUCATIVA "SIMÓN RODRÍGUEZ"</p>
+            
+            <div>
+                <h1 class="main-title">INFORME DE CAMPO:<br>BIOHUERTO ESCOLAR</h1>
+                <h2 style="font-weight: 300; margin-top: 20px;">Gestión de Frutales y Sostenibilidad</h2>
+            </div>
+
+            <div class="data-box">
+                <p><strong>ESTUDIANTES RESPONSABLES:</strong></p>
+                <p style="line-height: 1.8;">
+                    • VARGAS ANDRE &nbsp;&nbsp; • SIFUENTES BYRON<br>
+                    • TORRES KEYLO &nbsp;&nbsp; • RIOS EDUAR<br>
+                    • ROMERO JESÚS
+                </p>
+                <p><strong>DOCENTE:</strong> Hernando Marcelo Díaz Monje</p>
+                <p><strong>GRADO Y SECCIÓN:</strong> 5° "C"</p>
+                <p><strong>ÁREA:</strong> Matemática Aplicada</p>
+            </div>
+
+            <p style="font-weight: bold;">NAZCA - PERÚ<br>2026</p>
+        </div>
+    </div>
+    <div class="page-break"></div>
+
+    <div class="page">
+        <h3>Introducción</h3>
+        <p style="text-align: justify;">
+            El presente informe técnico tiene como finalidad detallar las acciones ejecutadas durante el proyecto de implementación del biohuerto escolar en la Institución Educativa "Simón Rodríguez". Este proyecto nace de la necesidad de recuperar espacios degradados y transformarlos en laboratorios vivos de aprendizaje. A lo largo de cuatro semanas, nuestro equipo ha realizado labores de saneamiento, preparación de suelos y diseño planimétrico, enfocándonos en la futura siembra de <strong>Limón</strong> y <strong>Pacae</strong>. El informe integra además el análisis matemático de las dimensiones del terreno, utilizando fracciones, porcentajes y decimales para la correcta distribución de los recursos hídricos y vegetales.
+        </p>
+
+        <h3>Desarrollo Semanal del Trabajo de Campo</h3>
+        
+        <div class="semana-container">
+            <h4>Semana 1: Saneamiento Ambiental y Limpieza</h4>
+            <p style="text-align: justify;">
+                En esta fase inicial, nos enfocamos en la eliminación de agentes contaminantes. Debido a la cercanía con los talleres de soldadura, el terreno presentaba una alta acumulación de restos metálicos y chatarra. Procedimos a la remoción manual exhaustiva, asegurando que el sustrato quedara libre de elementos que pudieran alterar el pH o liberar metales pesados perjudiciales para los árboles de <strong>Limón</strong>, los cuales son altamente sensibles a la toxicidad del suelo.
+            </p>
+            <div class="img-frame">
+                <img src="imagen1.jpeg" alt="Semana 1">
+            </div>
+        </div>
+    </div>
+    <div class="page-break"></div>
+
+    <div class="page">
+        <div class="semana-container">
+            <h4>Semana 2: Acondicionamiento Estructural (Piedras)</h4>
+            <p style="text-align: justify;">
+                Durante la segunda semana, procedimos a la delimitación física del área de trabajo. Recolectamos piedras de canto rodado de la zona para formar cordones perimetrales. Esta acción no es meramente estética; sirve como barrera para retener el agua de riego y evitar la erosión del suelo trabajado. Cada pozo de siembra fue marcado respetando el distanciamiento técnico necesario para el <strong>Pacae</strong>, que requiere mayor espacio por su envergadura foliar.
+            </p>
+            <div class="img-frame">
+                <img src="imagen2.jpeg" alt="Semana 2">
+            </div>
+        </div>
+
+        <div class="semana-container">
+            <h4>Semana 3: Hidratación y Humectación</h4>
+            <p style="text-align: justify;">
+                Con el terreno limpio y delimitado, iniciamos el proceso de riego por inundación controlada. En el clima árido de Nazca, el suelo tiende a compactarse como "tierra dura". El riego constante permitió ablandar el sustrato hasta una profundidad de 40 cm, garantizando que al momento de la siembra, las raíces jóvenes del Limón y el Pacae no encuentren resistencia mecánica y puedan absorber nutrientes eficientemente.
+            </p>
+            <div class="img-frame">
+                <img src="imagen3.jpeg" alt="Semana 3">
+            </div>
+        </div>
+    </div>
+    <div class="page-break"></div>
+
+    <div class="page">
+        <div class="semana-container">
+            <h4>Semana 4: Supervisión y Acabados Finales</h4>
+            <p style="text-align: justify;">
+                En la etapa final, realizamos una supervisión técnica integral. Verificamos que cada rincón del terreno estuviera libre de maleza y residuos. Procedimos al pintado de las piedras perimetrales para una señalización clara, facilitando la identificación de las zonas de tránsito y las zonas de protección. Se comprobó que el terreno esté nivelado para un riego uniforme, asegurando que cada planta reciba la cantidad exacta de agua calculada matemáticamente.
+            </p>
+            <div class="img-frame">
+                <img src="imagen4.jpeg" alt="Semana 4">
+            </div>
+        </div>
+
+        <h3>Diseño Planimétrico a Escala</h3>
+        <p>A continuación se presenta el levantamiento del terreno con medidas reales de $12m \times 17m$.</p>
+        <div class="img-frame" style="height: 400px;">
+            <img src="image_2600b0.png" alt="Plano del Biohuerto">
+        </div>
+    </div>
+    <div class="page-break"></div>
+
+    <div class="page">
+        <h3>Resolución de Problemas Matemáticos Aplicados</h3>
+        <p>Análisis de datos según el terreno asignado a nuestro equipo (5° C).</p>
+
+        <div class="math-grid">
+            <div class="math-item">
+                <strong>1. Cálculo de Superficie Real:</strong>
+                <p>Nuestro terreno total tiene $12m \times 17m$. Si nuestro equipo ocupa 1/5 de esta área para el Limón y el Pacae:</p>
+                <span class="result">Área Total = 204 m² | Nuestra Área (1/5) = 40.8 m²</span>
+            </div>
+
+            <div class="math-item">
+                <strong>2. Análisis de Cultivo (Fracciones y Decimales):</strong>
+                <p>De nuestros 40.8 m², destinamos 3/4 para el Limón y el resto para el Pacae.</p>
+                <span class="result">Limón: 40.8 × 0.75 = 30.6 m² | Pacae (Resto): 10.2 m²</span>
+            </div>
+
+            <div class="math-item">
+                <strong>3. Porcentaje de Eficiencia Hídrica:</strong>
+                <p>Se estima que el 15% del agua se pierde por evaporación. Si usamos 100 litros, ¿cuánta agua llega efectivamente a la raíz?</p>
+                <span class="result">Agua efectiva = 85% de 100L = 85 Litros.</span>
+            </div>
+
+            <div class="math-item">
+                <strong>4. Presupuesto (Decimales):</strong>
+                <p>Cada plantón de Limón cuesta S/ 18.50. Compramos 4 plantones y una bolsa de humus a S/ 25.80.</p>
+                <span class="result">Total: (4 × 18.50) + 25.80 = S/ 99.80</span>
+            </div>
+
+            <div class="math-item">
+                <strong>5. Problema de "Hojas Verdes y Secas":</strong>
+                <p>De 60 plantas analizadas, 45 están verdes. Expresa en fracción y porcentaje:</p>
+                <span class="result">Fracción: 45/60 = 3/4 | Porcentaje: 75% verdes.</span>
+            </div>
+        </div>
+
+        <h3>Conclusión</h3>
+        <p style="text-align: justify;">
+            El acondicionamiento del biohuerto escolar permitió al equipo de 5° "C" aplicar de manera práctica los conocimientos teóricos de matemáticas. La recuperación del espacio de 40.8 m² garantiza un ambiente óptimo para los frutales de Limón y Pacae. Se concluye que el orden, la limpieza y el cálculo exacto de áreas son fundamentales para el éxito de la agricultura escolar.
+        </p>
+    </div>
 
 </body>
-
 </html>
